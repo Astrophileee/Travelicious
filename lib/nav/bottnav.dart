@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import '../page/homePage.dart';
-import '../page/homePage2.dart';
 import '../page/foodPage.dart';
 import '../page/destinationPage.dart';
 import '../page/profilePage.dart';
-import '../page/notifPage.dart';
+import '../page/savePage.dart';
 
 class MyCustomNavBar extends StatefulWidget {
   const MyCustomNavBar({super.key});
@@ -17,9 +16,9 @@ class _MyCustomNavBarState extends State<MyCustomNavBar> {
   int _selectedNavbar = 2;
 
   final List<Widget> _pages = [
-    NotifPage(),
+    SavePage(),
     FoodPage(),
-    HomePage2(),
+    HomePage(),
     DestinationPage(),
     ProfilePage(),
   ];
@@ -36,9 +35,10 @@ class _MyCustomNavBarState extends State<MyCustomNavBar> {
       body: _pages[_selectedNavbar],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              icon: Icon(Icons.notifications), label: 'Notif'),
+              icon: Icon(Icons.bookmark), label: 'Bookmark'),
           BottomNavigationBarItem(icon: Icon(Icons.rice_bowl), label: 'Foods'),
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.tour), label: 'Tour'),

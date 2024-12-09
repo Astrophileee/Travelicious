@@ -38,9 +38,7 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(Duration(seconds: 3, milliseconds: 500), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(
-            builder: (context) =>
-                MyCustomNavBar()),
+        MaterialPageRoute(builder: (context) => MyCustomNavBar()),
       );
     });
   }
@@ -60,11 +58,13 @@ class _SplashScreenState extends State<SplashScreen>
           alignment: Alignment.center,
           children: [
             if (_showLottie)
-              Lottie.asset(
-                'lib/assets/lottie/Splash.json',
-                width: 300,
-                height: 300,
-              ),
+              ScaleTransition(
+                  scale: _textScaleAnimation,
+                  child: Lottie.asset(
+                    'lib/assets/lottie/Mobil.json',
+                    width: 300,
+                    height: 300,
+                  )),
             Column(
               mainAxisSize: MainAxisSize.min,
               children: [

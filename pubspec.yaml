@@ -21,4 +21,21 @@ flutter:
   uses-material-design: true
   assets:
     - lib/assets/images/
+    - lib/assets/images/baeco/
+    - lib/assets/images/LorongTemu/
+    - lib/assets/images/Maraloka/
+    - lib/assets/images/secretGarden/
+    - lib/assets/images/tomoro/
+    - lib/assets/images/kopitarium/
+    - lib/assets/images/Menata/
+    - lib/assets/images/Ninety/
+    - lib/assets/images/Selakopi/
+    - lib/assets/images/sondasaji/
+    - lib/assets/images/curugCibeureum/
+    - lib/assets/images/curugCikondang/
+    - lib/assets/images/pantaiKarangPotong/
+    - lib/assets/images/telagaBiru/
+    - lib/assets/images/theNice/
+    - lib/assets/images/kebunRayaCibodas/
+    - lib/assets/images/pantaiJayanti/
     - lib/assets/lottie/
